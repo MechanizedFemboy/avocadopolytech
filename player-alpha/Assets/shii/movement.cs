@@ -12,6 +12,7 @@ public class movement : MonoBehaviour
     public BoxCollider2D groundcheck;
     public LayerMask groundmask;
     public bool isgrounded;
+    PC pc;
 
     bool checkground()
     {
@@ -36,8 +37,21 @@ public class movement : MonoBehaviour
         mostream.x = Input.GetAxisRaw("Horizontal") * speed;
         rb.velocity = new Vector2(mostream.x, rb.velocity.y);
 
-        if (Input.GetButton("Jump")){
-            if(checkground()){rb.AddForce(Vector2.up * n);}
+        if (Input.GetButton("Jump"))
+        {
+            if (checkground()) { rb.AddForce(Vector2.up * n); }
+        }
+        if (Input.GetMouseButtonDown(0)) // при нажатии левой кнопки мыши
+        {
+
+            Vector2 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            if (pc.ClicktedHZ(mp))
+            {
+                
+            }
+            // Добавьте здесь логику взаимодействия с объектом
+
         }
     }
 }
