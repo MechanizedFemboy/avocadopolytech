@@ -12,12 +12,12 @@ public class movement : MonoBehaviour
     public BoxCollider2D groundcheck;
     public LayerMask groundmask;
     public bool isgrounded;
-    PC pc;
+    PC pc = new PC();
     private Camera cam;
 
     bool checkground()
     {
-        cam = Camera.main;
+        
         isgrounded = Physics2D.OverlapAreaAll(groundcheck.bounds.min, groundcheck.bounds.max, groundmask).Length > 0;
         return isgrounded;
     }
@@ -25,6 +25,7 @@ public class movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -45,17 +46,18 @@ public class movement : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0)) // при нажатии левой кнопки мыши
         {
-            Vector2 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
 
-            Debug.Log(mousePos);
+            Vector2 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            Debug.Log(mp);
 
             //Vector2 mp = cam.ScreenToWorldPoint(Input.mousePosition);
 
-            //if (pc.ClicktedHZ(mp))
-            //{
+            if (pc.ClicktedHZ(mp))
+            {
+                Instantiate(pc.screen);
+            }
 
-            //}
-            // Добавьте здесь логику взаимодействия с объектом
 
         }
     }
