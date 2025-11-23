@@ -13,9 +13,11 @@ public class movement : MonoBehaviour
     public LayerMask groundmask;
     public bool isgrounded;
     PC pc;
+    private Camera cam;
 
     bool checkground()
     {
+        cam = Camera.main;
         isgrounded = Physics2D.OverlapAreaAll(groundcheck.bounds.min, groundcheck.bounds.max, groundmask).Length > 0;
         return isgrounded;
     }
@@ -43,13 +45,16 @@ public class movement : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0)) // при нажатии левой кнопки мыши
         {
+            Vector2 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
 
-            Vector2 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Debug.Log(mousePos);
 
-            if (pc.ClicktedHZ(mp))
-            {
-                
-            }
+            //Vector2 mp = cam.ScreenToWorldPoint(Input.mousePosition);
+
+            //if (pc.ClicktedHZ(mp))
+            //{
+
+            //}
             // Добавьте здесь логику взаимодействия с объектом
 
         }
