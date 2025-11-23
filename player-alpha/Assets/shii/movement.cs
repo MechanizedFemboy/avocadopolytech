@@ -43,20 +43,24 @@ public class movement : MonoBehaviour
         {
             if (checkground()) { rb.AddForce(Vector2.up * n); }
         }
-        if (Input.GetMouseButtonDown(0)) // при нажатии левой кнопки мыши
-        {
-            Vector2 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        // if (Input.GetMouseButtonDown(0)) // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+        // {
+        //     Vector2 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
 
-            Debug.Log(mousePos);
+        //     Debug.Log(mousePos);
 
-            //Vector2 mp = cam.ScreenToWorldPoint(Input.mousePosition);
+        //     //Vector2 mp = cam.ScreenToWorldPoint(Input.mousePosition);
 
-            //if (pc.ClicktedHZ(mp))
-            //{
+        //     //if (pc.ClicktedHZ(mp))
+        //     //{
 
-            //}
-            // Добавьте здесь логику взаимодействия с объектом
+        //     //}
+        //     // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-        }
+        // }
+        
+
+
+        //ne pishi kommentarii kirillitsey, git stiraet ikh kogda pushaet
     }
 }

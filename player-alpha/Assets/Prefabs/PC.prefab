@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8821436163609556208}
   - component: {fileID: 7646365104123821748}
-  - component: {fileID: 6089871174763311877}
+  - component: {fileID: 1630956770195466522}
+  - component: {fileID: 5758881011584404022}
   - component: {fileID: 7201711847484282768}
   m_Layer: 0
   m_Name: PC
@@ -86,7 +87,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6089871174763311877
+--- !u!61 &1630956770195466522
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8660353891132724375}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 4, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4}
+  m_EdgeRadius: 0
+--- !u!114 &5758881011584404022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,9 +141,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8660353891132724375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09e38132aea60b041b2ad8fcfd0c7c3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3497c8eca25566c44855aaa51c1bd7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screen: {fileID: 0}
 --- !u!50 &7201711847484282768
 Rigidbody2D:
   serializedVersion: 4

@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Android.Gradle;
+//using Unity.Android.Gradle;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,7 +21,7 @@ public class TerminalManager : MonoBehaviour
     {
         interpreter = GetComponent<Interpreter>();
     }
-    /*    public float SS= 40 f;*/ //размер строки
+    /*    public float SS= 40 f;*/ //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     private void OnGUI()
     {
         if (terminalInput.isFocused && terminalInput.text != "" && Input.GetKeyDown(KeyCode.Return)){

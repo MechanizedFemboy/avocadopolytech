@@ -451,94 +451,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 32847494}
-  - {fileID: 1373283842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1373283841
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1373283842}
-  - component: {fileID: 1373283843}
-  m_Layer: 0
-  m_Name: 9-Sliced
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1373283842
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373283841}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.37, y: 0.56, z: -0.031648993}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1101400848}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1373283843
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373283841}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  m_Color: {r: 0.9622642, g: 0.6875801, b: 0.09531862, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1001 &1637726214
+--- !u!1001 &1408320169
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -546,21 +461,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6089871174763311877, guid: 96799912b889cf543819de7688775938, type: 3}
-      propertyPath: screen
-      value: 
-      objectReference: {fileID: 6573580616979314974, guid: 766a2a01516ef4c4fb51b3e495d7a317, type: 3}
     - target: {fileID: 8660353891132724375, guid: 96799912b889cf543819de7688775938, type: 3}
       propertyPath: m_Name
       value: PC
       objectReference: {fileID: 0}
     - target: {fileID: 8821436163609556208, guid: 96799912b889cf543819de7688775938, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.46948653
+      value: 2.394
       objectReference: {fileID: 0}
     - target: {fileID: 8821436163609556208, guid: 96799912b889cf543819de7688775938, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1929642
+      value: -1.042
       objectReference: {fileID: 0}
     - target: {fileID: 8821436163609556208, guid: 96799912b889cf543819de7688775938, type: 3}
       propertyPath: m_LocalPosition.z
@@ -772,7 +683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  n: 25
+  n: 15
   groundcheck: {fileID: 1073828999}
   groundmask:
     serializedVersion: 2
@@ -785,4 +696,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1101400848}
   - {fileID: 2048992306}
-  - {fileID: 1637726214}
+  - {fileID: 1408320169}
