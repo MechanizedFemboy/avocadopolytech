@@ -7,6 +7,8 @@ using UnityEngine;
 public class PCremake : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public GameObject Terminal;
+    public Transform spawnpoint;
     public GameObject screen;
     void Start()
     {
@@ -22,12 +24,12 @@ public class PCremake : MonoBehaviour
     //     Debug.Log("nenene");
     //     return false; }
 
-    void OMouseOver()
+    void OnMouseOver()
     {
-        Debug.Log("kokosiki");
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("ДЖАРВИС ПОДЁРГАЙ МОЙ ПИНАР");
+            Object.Instantiate(Terminal);
         }
         //poproboval funktsyu tvoyu zloebuchyu pochinit'
         //huynya adolzhna rabotat', no ono ne vidit mysh pryam sovsem
