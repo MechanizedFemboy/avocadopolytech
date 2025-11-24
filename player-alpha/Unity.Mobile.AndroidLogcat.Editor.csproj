@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Unity.VisualScripting.SettingsProvider.Editor</AssemblyName>
+    <AssemblyName>Unity.Mobile.AndroidLogcat.Editor</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -64,19 +64,71 @@
     <Analyzer Include="D:\unity editor\2022.3.62f3\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\ProjectSettingsProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\ProjectSettings\BackupSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\ProjectSettings\LinkerPropertyProviderSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\ProjectSettings\CustomPropertyProviderSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\ProjectSettingsProviderView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\EditorPreferencesProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\ProjectSettings\AssemblyOptionsSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\ProjectSettings\TypeOptionsSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\EditorPreferencesProviderView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\ProjectSettings\ScriptReferenceResolverSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatUserSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatContextMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\UI\AndroidLogcatFastListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatDeviceQuery.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatTagInformation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatTags.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatCaptureVideo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\PosixSignal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatMessagesViews.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatQueryLayout.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\Tasks\AndroidLogcatTaskResult.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\UI\Splitter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\Tasks\AndroidLogcatConnectToDeviceTask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatAutoSelect.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatCaptureScreenshot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatEntry.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatIPWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidTools\Paths.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatExtraWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidMemoryStatistics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidScreenRotation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatColumnData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\UI\AndroidLogcatSymbolList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatBuildInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\UI\AndroidLogcatReordableListWithReset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidTools\Shell.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatConsoleWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatVideoPlayer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatProjectSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatSendTrimMemoryUsage.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatStacktraceWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatStatusBar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatLayoutViewerWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatCallbacks.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatSessionSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatRuntime.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatProcessInformation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatAutoScroll.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatFilterOptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatInternalLog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatMemoryViewer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatActivityManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatMessageProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidKeyCode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\Tasks\AndroidLogcatDispatcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatInputs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\Tasks\AndroidLogcatTaskInput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidTools\AndroidTools.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\UI\AndroidLogcatReordableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatPriority.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatScreenCaptureWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidTools\AndroidBridge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatDevice.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatStyles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\AndroidLogcatDeviceSelection.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\SettingsProvider\Unity.VisualScripting.SettingsProvider.Editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\Unity.Mobile.AndroidLogcat.Editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.mobile.android-logcat@1.4.6\Editor\UI\Layouts\AndroidLogcatLayoutViewer.uxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -965,11 +1017,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VisualScripting.Core.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.State.csproj" />
     <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
     <ProjectReference Include="UnityEditor.TestRunner.csproj" />
