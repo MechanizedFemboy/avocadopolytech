@@ -61,11 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Interpreter.cs" />
-    <Compile Include="Assets\shii\interactable.cs" />
     <Compile Include="Assets\Scripts\TerminalManager.cs" />
     <Compile Include="Assets\Scripts\PC.cs" />
     <Compile Include="Assets\Scripts\PCremake.cs" />
-    <Compile Include="Assets\shii\movement.cs" />
+    <Compile Include="Assets\Scripts\movement.cs" />
+    <Compile Include="Assets\Scripts\interactable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

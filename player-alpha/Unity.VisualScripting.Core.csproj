@@ -458,8 +458,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Utilities\CSharpNameUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Events\EventMachine.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Graphs\GraphElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Graphs\GraphElementCollection.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Dependencies\FullSerializer\Converters\Unity\Gradient_DirectConverter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Graphs\GraphElementCollection.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Utilities\Recursion.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Macros\Macro.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Core\Reflection\MemberInfoComparer.cs" />
