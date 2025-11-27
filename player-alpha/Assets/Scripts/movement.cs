@@ -14,12 +14,25 @@ public class movement : MonoBehaviour
     public bool isgrounded;
     PC pc = new PC();
     private Camera cam;
+    public Vector2 BoxSize;
+    public float dist;
 
     bool checkground()
     {
-        
-        isgrounded = Physics2D.OverlapAreaAll(groundcheck.bounds.min, groundcheck.bounds.max, groundmask).Length > 0;
-        return isgrounded;
+        if(Physics2D.BoxCast(transform.position, BoxSize, 0, -transform.up, dist, groundmask))
+        {
+            isgrounded = true;
+            return isgrounded;
+        }
+        else
+        {
+            isgrounded = false;
+            return isgrounded;
+        }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position - transform.up * dist, BoxSize);
     }
 
     // Start is called before the first frame update
@@ -44,7 +57,7 @@ public class movement : MonoBehaviour
         {
             if (checkground()) { rb.AddForce(Vector2.up * n); }
         }
-        if (Input.GetMouseButtonDown(0)) // ��� ������� ����� ������ ����
+        if (Input.GetMouseButtonDown(0))
         {
 
             Vector2 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
