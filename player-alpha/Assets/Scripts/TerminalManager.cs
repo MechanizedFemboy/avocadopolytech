@@ -14,12 +14,17 @@ public class TerminalManager : MonoBehaviour
     public GameObject userInputLine;
     public ScrollRect sr;
     public GameObject msgList;
-
+    public GameObject Controller;
+    
     Interpreter interpreter;
-
+    public StanokController stanokController;
     private void Start()
     {
+        
         interpreter = GetComponent<Interpreter>();
+        interpreter.TerminalManager = this;
+
+
     }
     /*    public float SS= 40 f;*/ //������ ������
     private void OnGUI()
@@ -63,7 +68,7 @@ public class TerminalManager : MonoBehaviour
         msg.GetComponentsInChildren<Text>()[1].text = userInput;
     }
 
-    int AddInterpreterLines(List<string> interpretation)
+    public int AddInterpreterLines(List<string> interpretation)
     {
         for (int i = 0; i < interpretation.Count; i++)
         {
@@ -88,6 +93,18 @@ public class TerminalManager : MonoBehaviour
         else
         {
             sr.verticalNormalizedPosition =0;
+        }
+    }
+    public void Act(string act)
+    {
+        switch (act)
+        {
+            case ("powerOff"):
+                stanokController.PowerOff();
+                break;
+            case ("powerOn"):
+                stanokController.PowerOn();
+                break;
         }
     }
 }

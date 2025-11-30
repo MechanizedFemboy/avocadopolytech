@@ -5,26 +5,39 @@ using System.Collections.Generic;
 public class Interpreter : MonoBehaviour
 {
     List<string> response = new List<string>();
-
+    public TerminalManager TerminalManager;
     public List<string> Intepret(string userInput)
     {
         response.Clear();
 
         string[] args = userInput.Split();
-
-        if (args[0] == "help")
+        switch (args[0])
         {
+            case ("?"):
+                response.Add("Ахвхвхвх хелп2x");
 
-            response.Add("Ахвхвхвх хелп");
-            response.Add("Ахвхвхвх хелп2x");
+                return response;
+                break;
+            case ("выкл"):
 
-            return response;
+                response.Add("Аппарат отключен.");
+                TerminalManager.Act("powerOff");
+                return response;
+                break;
 
+            case ("вкл"):
+
+                response.Add("Аппарат включен.");
+                TerminalManager.Act("powerON");
+                Debug.Log("PON");
+                return response;
+                break;
+            default:
+                response.Add("Че?");
+                return response;
+                break;
         }
-        else
-        {
-            response.Add("Че?");
-            return response;
-        }
+       
+        
     }
 }
