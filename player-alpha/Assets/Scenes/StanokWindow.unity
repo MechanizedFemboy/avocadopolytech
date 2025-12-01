@@ -264,6 +264,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7431549583522714641, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
   m_PrefabInstance: {fileID: 8985725}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &43803514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6249776858663863990, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
+  m_PrefabInstance: {fileID: 8985725}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &121499494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 492947719696381169, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
@@ -345,6 +350,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1260761890}
     m_Modifications:
+    - target: {fileID: 686809544838730958, guid: 766a2a01516ef4c4fb51b3e495d7a317, type: 3}
+      propertyPath: Controller
+      value: 
+      objectReference: {fileID: 1985039823}
     - target: {fileID: 950269377421817550, guid: 766a2a01516ef4c4fb51b3e495d7a317, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -727,8 +736,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0901d1f5f985aec488cb37e709645d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Idial: {fileID: 0}
-  r: 0
+  Idial: {fileID: 43803514}
+  r: 2
 --- !u!1 &1985039823
 GameObject:
   m_ObjectHideFlags: 0
