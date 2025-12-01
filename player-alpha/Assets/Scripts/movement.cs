@@ -97,11 +97,7 @@ public class movement : MonoBehaviour
         //ne pishi kommentarii kirillitsey, git stiraet ikh kogda pushaet
 
 
-            if (pc.ClicktedHZ(mp))
-            {
-                Instantiate(pc.screen);
-            }
- 827cbe9c68ef5bfc1367b3661448beadcdfaac82
+ 
     }
 }
-}
+

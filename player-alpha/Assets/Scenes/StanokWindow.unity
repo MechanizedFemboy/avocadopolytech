@@ -146,6 +146,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5910341620360481680, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
+      propertyPath: m_Name
+      value: Gear
+      objectReference: {fileID: 0}
     - target: {fileID: 7431549583522714641, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -246,10 +250,14 @@ PrefabInstance:
       propertyPath: Gonashaya
       value: 
       objectReference: {fileID: 1749619215}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 117438120244561237, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5910341620360481680, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1749619221}
   m_SourcePrefab: {fileID: 100100000, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
 --- !u!224 &8985726 stripped
 RectTransform:
@@ -707,6 +715,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5910341620360481680, guid: 7e1c08994486c7249ac92428ca80e001, type: 3}
   m_PrefabInstance: {fileID: 8985725}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1749619221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749619215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0901d1f5f985aec488cb37e709645d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Idial: {fileID: 0}
+  r: 0
 --- !u!1 &1985039823
 GameObject:
   m_ObjectHideFlags: 0
