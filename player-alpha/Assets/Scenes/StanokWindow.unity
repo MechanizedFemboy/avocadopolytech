@@ -737,7 +737,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Idial: {fileID: 43803514}
+  G1: {fileID: 1665962334}
+  G3: {fileID: 121499494}
   r: 2
+  vertimsa: 0
+  stanokController: {fileID: 0}
 --- !u!1 &1985039823
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|e:\\unt\\nto\\avocadopolytech\\player-alpha\\assets\\scripts\\gear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|E:\\unt\\NTO\\avocadopolytech\\player-alpha\\assets\\scripts\\gear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|E:\\unt\\NTO\\avocadopolytech\\player-alpha\\assets\\scripts\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|E:\\unt\\NTO\\avocadopolytech\\player-alpha\\assets\\scripts\\terminalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\terminalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|e:\\unt\\nto\\avocadopolytech\\player-alpha\\assets\\scripts\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|E:\\unt\\NTO\\avocadopolytech\\player-alpha\\assets\\scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|E:\\unt\\NTO\\avocadopolytech\\player-alpha\\assets\\scripts\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|E:\\unt\\NTO\\avocadopolytech\\player-alpha\\assets\\scripts\\stanokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|E:\\unt\\NTO\\avocadopolytech\\player-alpha\\assets\\scripts\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33284EF8-CA2A-D9F1-9947-8792284FE38C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\shii\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\shii\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,72 +66,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SaveSystem.cs",
-              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\SaveSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveSystem.cs",
-              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\SaveSystem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SaveSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:07:47.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PCremake.cs",
-              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\PCremake.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PCremake.cs",
-              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\PCremake.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PCremake.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T19:07:37.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameStats.cs",
-              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\GameStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameStats.cs",
-              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\GameStats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameStats.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T20:44:41.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StanokController.cs",
-              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\StanokController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StanokController.cs",
-              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\StanokController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StanokController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T19:50:13.612Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Gear.cs",
               "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Gear.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gear.cs",
-              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Gear.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Gear.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Gear.cs*",
+              "RelativeToolTip": "Assets\\Scripts\\Gear.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACwAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T14:26:17.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "movement.cs",
               "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\movement.cs",
@@ -140,18 +96,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Interpreter.cs",
+              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Interpreter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interpreter.cs",
+              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Interpreter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interpreter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T16:56:22.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SaveSystem.cs",
+              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\SaveSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveSystem.cs",
+              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\SaveSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:07:47.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TerminalManager.cs",
               "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\TerminalManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TerminalManager.cs",
               "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\TerminalManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\TerminalManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T16:56:23.205Z"
+              "WhenOpened": "2025-11-23T16:56:23.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "StanokController.cs",
+              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\StanokController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StanokController.cs",
+              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\StanokController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StanokController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:50:13.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameStats.cs",
+              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\GameStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameStats.cs",
+              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\GameStats.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameStats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T20:44:41.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PCremake.cs",
+              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\PCremake.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PCremake.cs",
+              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\PCremake.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PCremake.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:07:37.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "interactable.cs",
+              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\interactable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\interactable.cs",
+              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\interactable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\interactable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:30:26.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Gonimaya.cs",
               "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Gonimaya.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gonimaya.cs",
@@ -163,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PC.cs",
               "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\PC.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PC.cs",
@@ -175,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Gon.cs",
               "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Gon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gon.cs",
@@ -187,19 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Interpreter.cs",
-              "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Interpreter.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Interpreter.cs",
-              "ToolTip": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\Scripts\\Interpreter.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Interpreter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T16:56:22.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "movement.cs",
               "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\shii\\movement.cs",
               "RelativeDocumentMoniker": "Assets\\shii\\movement.cs",
@@ -210,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "interactable.cs",
               "DocumentMoniker": "E:\\unt\\NTO\\avocadopolytech\\player-alpha\\Assets\\shii\\interactable.cs",
               "RelativeDocumentMoniker": "Assets\\shii\\interactable.cs",

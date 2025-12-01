@@ -20,13 +20,16 @@ public class TerminalManager : MonoBehaviour
     public StanokController stanokController;
     private void Start()
     {
-        
+
         interpreter = GetComponent<Interpreter>();
-        interpreter.TerminalManager = this;
+        
+        interpreter.terminalManager = this;
 
 
     }
     /*    public float SS= 40 f;*/ //������ ������
+
+
     private void OnGUI()
     {
         if (terminalInput.isFocused && terminalInput.text != "" && Input.GetKeyDown(KeyCode.Return)){

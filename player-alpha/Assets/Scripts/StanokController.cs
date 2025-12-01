@@ -20,6 +20,8 @@ public class StanokController : MonoBehaviour
         terminalManager.stanokController = this;
         Gonatel = G1.GetComponent<Gon>();
         Gonimaya = G3.GetComponent<Gonimaya>();
+        Gonimaya.stanokController = this;
+        Gonatel.stanokController = this;
         Gonatel.power = power;
     }
     public void PowerOff()
