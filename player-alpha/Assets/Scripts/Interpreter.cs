@@ -5,9 +5,12 @@ using System.Collections.Generic;
 public class Interpreter : MonoBehaviour
 {
     List<string> response = new List<string>();
-    public TerminalManager TerminalManager;
+    public TerminalManager terminalManager;
+
+    
     public List<string> Intepret(string userInput)
     {
+        Debug.Log("Ponal0");
         response.Clear();
 
         string[] args = userInput.Split();
@@ -21,23 +24,24 @@ public class Interpreter : MonoBehaviour
             case ("выкл"):
 
                 response.Add("Аппарат отключен.");
-                TerminalManager.Act("powerOff");
+                terminalManager.Act("powerOff");
                 return response;
                 break;
 
             case ("вкл"):
 
                 response.Add("Аппарат включен.");
-                TerminalManager.Act("powerON");
+                terminalManager.Act("powerON");
                 Debug.Log("PON");
                 return response;
                 break;
             default:
+                Debug.Log("NEPON");
                 response.Add("Че?");
                 return response;
                 break;
         }
-       
-        
+
+
     }
 }

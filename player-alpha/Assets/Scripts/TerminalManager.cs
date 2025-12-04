@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 //using Unity.Android.Gradle;
@@ -16,21 +17,24 @@ public class TerminalManager : MonoBehaviour
     public GameObject msgList;
     public GameObject Controller;
     
-    Interpreter interpreter;
+
+/*    Interpreter interpreter = new Interpreter();*/
     public StanokController stanokController;
     private void Start()
     {
-        
+/*
         interpreter = GetComponent<Interpreter>();
-        interpreter.TerminalManager = this;
-
+        
+        interpreter.terminalManager = this;*/
 
     }
     /*    public float SS= 40 f;*/ //������ ������
+
+
     private void OnGUI()
     {
         if (terminalInput.isFocused && terminalInput.text != "" && Input.GetKeyDown(KeyCode.Return)){
-
+          
             //Store whatewer us typed
             string userInput = terminalInput.text;
 
@@ -39,10 +43,11 @@ public class TerminalManager : MonoBehaviour
 
             AddDictionaryLine(userInput);
 
-            int lines = AddInterpreterLines(interpreter.Intepret(userInput));
-
+            int lines = AddInterpreterLines(Intepret(userInput));
+           
+            
             ScrollToButton(lines);
-
+           
             userInputLine.transform.SetAsLastSibling();
 
             terminalInput.ActivateInputField();
@@ -70,6 +75,7 @@ public class TerminalManager : MonoBehaviour
 
     public int AddInterpreterLines(List<string> interpretation)
     {
+
         for (int i = 0; i < interpretation.Count; i++)
         {
             GameObject res = Instantiate(responsableLine, msgList.transform);
@@ -103,8 +109,46 @@ public class TerminalManager : MonoBehaviour
                 stanokController.PowerOff();
                 break;
             case ("powerOn"):
+                Debug.Log("power0");
                 stanokController.PowerOn();
                 break;
         }
+    }
+    public List<string> Intepret(string userInput)
+    {
+        List<string> response = new List<string>();
+      
+        response.Clear();
+
+        string[] args = userInput.Split();
+        switch (args[0])
+        {
+            case ("?"):
+                response.Add("Ахвхвхвх хелп2x");
+
+                return response;
+                break;
+            case ("выкл"):
+
+                response.Add("Аппарат отключен.");
+                Act("powerOff");
+                return response;
+                break;
+
+            case ("вкл"):
+
+                response.Add("Аппарат включен.");
+                Act("powerOn");
+               
+                return response;
+                break;
+            default:
+           
+                response.Add("Че?");
+                return response;
+                break;
+        }
+
+
     }
 }

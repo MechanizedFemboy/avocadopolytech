@@ -12,14 +12,18 @@ public class Gonimaya : MonoBehaviour
     {
         
     }
-
+    public void Well(float n)
+    {
+        vertimsa = n;
+        stanokController.Well();
+    }
     // Update is called once per frame
     void Update()
     {
         if (vertimsa != 0)
         {
             transform.Rotate(0, 0, vertimsa * Time.deltaTime);
-            stanokController.Well();
+            
         }
     }
 }
