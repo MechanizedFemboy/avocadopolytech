@@ -48,7 +48,7 @@ public class movement : MonoBehaviour
         mostream.x = Input.GetAxisRaw("Horizontal") * speed;
         rb.velocity = new Vector2(mostream.x, rb.velocity.y);
 
-        if (Input.GetButton("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             if (checkground()) { rb.AddForce(Vector2.up * n); }
         }

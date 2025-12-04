@@ -60,5 +60,6 @@ public class StanokController : MonoBehaviour
     public void Well()
     {
         terminalManager.AddInterpreterLines( new List<string> { "работает исправно" });
+
     }
 }
