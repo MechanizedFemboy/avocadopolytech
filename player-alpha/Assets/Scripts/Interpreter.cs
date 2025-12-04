@@ -10,6 +10,7 @@ public class Interpreter : MonoBehaviour
     
     public List<string> Intepret(string userInput)
     {
+        Debug.Log("Ponal0");
         response.Clear();
 
         string[] args = userInput.Split();
@@ -35,11 +36,12 @@ public class Interpreter : MonoBehaviour
                 return response;
                 break;
             default:
+                Debug.Log("NEPON");
                 response.Add("Че?");
                 return response;
                 break;
         }
-       
-        
+
+
     }
 }

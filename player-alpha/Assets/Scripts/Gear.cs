@@ -13,9 +13,11 @@ public class Gear : MonoBehaviour
     private Gonimaya Gonimaya;
     bool set = false;
     public float r;
-
+    public GameObject Pole;
     public float vertimsa;
     public StanokController stanokController;
+    private Vector2 pp;
+    public float granica;
     private void OnMouseDown()
     {
 
@@ -42,30 +44,27 @@ public class Gear : MonoBehaviour
         if (Mathf.Abs(this.gameObject.transform.position.x - Idial.gameObject.transform.position.x) <= r && Mathf.Abs(this.gameObject.transform.position.x - Idial.gameObject.transform.position.x) <= r)
         {
             set = true;
-            this.gameObject.transform.position = Idial.gameObject.transform.position;
-            vertimsa = Gonatel.vertimsa * -1;
-            Gonimaya.Well(vertimsa * -1);
+            
             if (Gonatel.power)
             {
                 Deth();
             }
+            else
+            {
+                this.gameObject.transform.position = Idial.gameObject.transform.position;
+                vertimsa = Gonatel.vertimsa * -1;
+                Gonimaya.Well(vertimsa * -1);
+            }
 
         }
-        else
-        {
-            set = true;
-            this.gameObject.transform.position = Idial.gameObject.transform.position;
-        }
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (set && Gonatel.power)
-        {
-            
-        }
+        
         if (vertimsa != 0)
         {
             transform.Rotate(0, 0, vertimsa * Time.deltaTime);
@@ -74,12 +73,14 @@ public class Gear : MonoBehaviour
         {
             mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-
-            this.gameObject.transform.position = new Vector2(mp.x - startP.x, mp.y - startP.y);
+            if (Mathf.Abs(mp.x - pp.x) < granica && Mathf.Abs(mp.y - pp.y) < granica)
+            {
+                this.gameObject.transform.position = new Vector2(mp.x - startP.x, mp.y - startP.y);
+            }
         }
     }
     public void Deth()
     {
-
+        Debug.Log("Umer");
     }
 }

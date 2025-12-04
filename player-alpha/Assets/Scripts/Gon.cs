@@ -14,6 +14,7 @@ public class Gon : MonoBehaviour
     {
         if (power)
         {
+            
             transform.Rotate(0, 0, vertimsa * Time.deltaTime);
         }
     }
