@@ -1,3 +1,5 @@
+
+
 using UnityEngine;
 
 public class Gear : MonoBehaviour
@@ -83,4 +85,8 @@ public class Gear : MonoBehaviour
     {
         Debug.Log("Umer");
     }
+
 }
+
+
+

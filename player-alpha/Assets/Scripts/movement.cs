@@ -42,11 +42,6 @@ public class movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-
-    
-    
-
     private Vector2 mostream;
     void Update()
     {
@@ -57,6 +52,7 @@ public class movement : MonoBehaviour
         {
             if (checkground()) { rb.AddForce(Vector2.up * n); }
         }
+
 
 
         /*if (Input.GetMouseButtonDown(0)) // при нажатии левой кнопки мыши
@@ -100,4 +96,5 @@ public class movement : MonoBehaviour
  
     }
 }
+
 
