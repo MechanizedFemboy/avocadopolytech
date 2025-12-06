@@ -1,5 +1,3 @@
-
-
 using UnityEngine;
 
 public class Gear : MonoBehaviour
@@ -22,15 +20,14 @@ public class Gear : MonoBehaviour
     public float granica;
     private void OnMouseDown()
     {
-        Debug.Log("Tyc0");
+
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Tyc1");
+
             move = true;
-
-
-            //startP = Vector2.zero;
-       /*     startP = Mathf.Abs(this.gameObject.transform.position.x-Camera.main.transform.position.x);*/
+            //startP.x = mp.x-transform.position.x;
+            //startP.y = mp.y-transform.position.y;
+            startP = Vector2.zero;
         }
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -74,20 +71,16 @@ public class Gear : MonoBehaviour
         }
         if (move)
         {
-          
-            
+            mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-           
-            this.gameObject.transform.position = new Vector2(mp.x - startP.x, mp.y - startP.y);
-            
+            if (Mathf.Abs(mp.x - pp.x) < granica && Mathf.Abs(mp.y - pp.y) < granica)
+            {
+                this.gameObject.transform.position = new Vector2(mp.x - startP.x, mp.y - startP.y);
+            }
         }
     }
     public void Deth()
     {
         Debug.Log("Umer");
     }
-
 }
-
-
-
