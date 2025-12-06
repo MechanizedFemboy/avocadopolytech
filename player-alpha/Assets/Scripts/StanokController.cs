@@ -59,6 +59,7 @@ public class StanokController : MonoBehaviour
     }
     public void Well()
     {
+        // СТАНОК ПОЧИНИЛИ
         terminalManager.AddInterpreterLines( new List<string> { "работает исправно" });
     }
 }

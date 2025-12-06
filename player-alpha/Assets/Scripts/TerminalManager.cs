@@ -1,5 +1,5 @@
-using System;
-using System.Collections;
+
+
 using System.Collections.Generic;
 //using Unity.Android.Gradle;
 using Unity.VisualScripting;
@@ -10,12 +10,14 @@ public class TerminalManager : MonoBehaviour
 {
     public GameObject directoryLine;
     public GameObject responsableLine;
-
+    public GameObject PoshalkoLine;
     public InputField terminalInput;
     public GameObject userInputLine;
     public ScrollRect sr;
     public GameObject msgList;
     public GameObject Controller;
+    public int PoshalkoChance;
+    public string[] Poshalki;
     
 
 /*    Interpreter interpreter = new Interpreter();*/
@@ -44,6 +46,11 @@ public class TerminalManager : MonoBehaviour
             AddDictionaryLine(userInput);
 
             int lines = AddInterpreterLines(Intepret(userInput));
+            int ch = Random.Range(0, PoshalkoChance);
+            if (ch == 1)
+            {
+                lines += AddPoshalkoLines();
+            }
            
             
             ScrollToButton(lines);
@@ -72,7 +79,26 @@ public class TerminalManager : MonoBehaviour
 
         msg.GetComponentsInChildren<Text>()[1].text = userInput;
     }
+    public int AddPoshalkoLines()
+    {
+        int num = Random.Range(0, Poshalki.Length);
+        List<string> interpretation = new List<string>();
+        interpretation.Add(Poshalki[num]);
+        for (int i = 0; i < interpretation.Count; i++)
+        {
+            
+            GameObject res = Instantiate(PoshalkoLine, msgList.transform);
+            res.transform.SetAsLastSibling();
 
+            Vector2 listSize = msgList.GetComponent<RectTransform>().sizeDelta;
+            msgList.GetComponent<RectTransform>().sizeDelta = new Vector2(listSize.x, listSize.y + 40f);
+
+
+            res.GetComponentInChildren<Text>().text = interpretation[i];
+        }
+        
+        return interpretation.Count;
+    }
     public int AddInterpreterLines(List<string> interpretation)
     {
 
@@ -124,8 +150,28 @@ public class TerminalManager : MonoBehaviour
         switch (args[0])
         {
             case ("?"):
-                response.Add("Ахвхвхвх хелп2x");
 
+                
+                response.Add("выкл - отключение станка");
+                response.Add("вкл - включение станка");
+                response.Add("док - документация к машине");
+                return response;
+                break;
+            case ("док"):
+                response.Add("Стадия производства бибки -  67А");
+                response.Add("      ! в целях безопасности перед починкой отключите аппарат.");
+                response.Add("  Вылет передаточной шестерни:");
+                response.Add("Возможные поломки:");
+                response.Add("  Св-ва Асу: //-доступ запрещен-// ");
+                response.Add("Оснащен Автономной Системой Управления");
+                response.Add("Токарный Станок мод. Ф-420");
+                
+                
+                
+
+                
+                
+                
                 return response;
                 break;
             case ("выкл"):
@@ -143,8 +189,9 @@ public class TerminalManager : MonoBehaviour
                 return response;
                 break;
             default:
-           
-                response.Add("Че?");
+                response.Add("? - помощь");
+                response.Add("такая команда отсутствует.");
+                
                 return response;
                 break;
         }

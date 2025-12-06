@@ -7,6 +7,7 @@ public class Gonimaya : MonoBehaviour
     public GameObject Gonashaya;
     public float vertimsa;
     public StanokController stanokController;
+    bool w = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +15,12 @@ public class Gonimaya : MonoBehaviour
     }
     public void Well(float n)
     {
-        vertimsa = n;
-        stanokController.Well();
+        if (w)
+        {
+            vertimsa = n;
+            stanokController.Well();
+            w = false;
+        }
     }
     // Update is called once per frame
     void Update()

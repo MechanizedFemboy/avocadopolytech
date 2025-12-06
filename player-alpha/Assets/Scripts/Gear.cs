@@ -28,6 +28,7 @@ public class Gear : MonoBehaviour
             //startP.x = mp.x-transform.position.x;
             //startP.y = mp.y-transform.position.y;
             startP = Vector2.zero;
+
         }
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,23 +40,22 @@ public class Gear : MonoBehaviour
     }
     private void OnMouseUp()
     {
-
-        move = false;
-        if (Mathf.Abs(this.gameObject.transform.position.x - Idial.gameObject.transform.position.x) <= r && Mathf.Abs(this.gameObject.transform.position.x - Idial.gameObject.transform.position.x) <= r)
-        {
-            set = true;
-            
-            if (Gonatel.power)
+        if (!set) { 
+            move = false;
+            if (Mathf.Abs(this.gameObject.transform.position.x - Idial.gameObject.transform.position.x) <= r && Mathf.Abs(this.gameObject.transform.position.x - Idial.gameObject.transform.position.x) <= r)
             {
-                Deth();
-            }
-            else
-            {
-                this.gameObject.transform.position = Idial.gameObject.transform.position;
-                vertimsa = Gonatel.vertimsa * -1;
-                Gonimaya.Well(vertimsa * -1);
-            }
+                set = true;
 
+                if (Gonatel.power)
+                {
+                    Deth();
+                }
+                else
+                {
+                    this.gameObject.transform.position = Idial.gameObject.transform.position;
+
+                }
+            }
         }
         
 
@@ -64,7 +64,11 @@ public class Gear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Gonatel.power && set)
+        {
+            vertimsa = -1 * Gonatel.vertimsa;
+            Gonimaya.Well(-vertimsa);
+        }
         if (vertimsa != 0)
         {
             transform.Rotate(0, 0, vertimsa * Time.deltaTime);
@@ -73,6 +77,7 @@ public class Gear : MonoBehaviour
         {
             mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
+            this.gameObject.transform.position = new Vector2(mp.x - startP.x, mp.y - startP.y);
             if (Mathf.Abs(mp.x - pp.x) < granica && Mathf.Abs(mp.y - pp.y) < granica)
             {
                 this.gameObject.transform.position = new Vector2(mp.x - startP.x, mp.y - startP.y);
@@ -81,6 +86,6 @@ public class Gear : MonoBehaviour
     }
     public void Deth()
     {
-        Debug.Log("Umer");
+        Debug.Log("Umer"); // ялепрэ б мхыере
     }
 }
