@@ -23,16 +23,16 @@ public class SavedData
     назначенной им статы
     -всё это дело абильно комментировать
 */
-public class SaveSystem
+public static class SaveSystem
 {
-    public SavedData stats = new SavedData();
-    public string SaveName()
+    public static SavedData stats;
+    public static string SaveName()
     {
         string path = Application.persistentDataPath + "/save" + ".stat";
         return path;
     }
 
-    public void Save()
+    public static void Save()
     {
         if (File.Exists(SaveName()))
         {
@@ -40,7 +40,7 @@ public class SaveSystem
         }
         File.WriteAllText(SaveName(), JsonUtility.ToJson(stats));
     }
-    public void Load()
+    public static void Load()
     {
         if (File.Exists(SaveName()))
         {

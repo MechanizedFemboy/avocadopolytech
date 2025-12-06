@@ -17,11 +17,9 @@ public class StanokController : MonoBehaviour
     public GameObject[] Panels;
     public int view = 0;
     Camera cam = Camera.main;
-    SaveSystem SS; // объект класса СистемаСейвов, через который ты вызываешь методы
     // Update is called once per frame
     void Start()
     {
-        SS.Load(); //метод который загружает поля из жсон-файла сохранения
         terminalManager = Terminal.GetComponent<TerminalManager>();
         terminalManager.stanokController = this;
         Gonatel = G1.GetComponent<Gon>();
@@ -61,9 +59,6 @@ public class StanokController : MonoBehaviour
     }
     public void Well()
     {
-        terminalManager.AddInterpreterLines( new List<string> { "�������� ��������" });
-        SS.stats.FixedUnits +=1;
-        SS.Save(); //метод который записывает всё сохранённое в жсон-файл (дада сохра перезаписывается идите нахуй те кто любят манипуляции с сохрами)
-        // ^^^ можно поместить в функцию на выход станка со сцены, сэкономим 3 копейки на сейвах
+        terminalManager.AddInterpreterLines( new List<string> { "�������� ��������" });
     }
 }

@@ -9,13 +9,13 @@ public class movement : MonoBehaviour
     public float speed = 25f;
     private Rigidbody2D rb;
     public float n = 25f;
+    public BoxCollider2D groundcheck;
     public LayerMask groundmask;
     public bool isgrounded;
+    PC pc = new PC();
     private Camera cam;
     public Vector2 BoxSize;
     public float dist;
-    private Animator anim;
-    private SpriteRenderer sprt;
 
     bool checkground()
     {
@@ -40,16 +40,12 @@ public class movement : MonoBehaviour
     {
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        sprt = GetComponent<SpriteRenderer>();
     }
 
-    void Animate()
-    {
-        bool IsMoving = Input.GetAxisRaw("Horizontal") != 0;
-        sprt.flipX = Input.GetAxisRaw("Horizontal") < 0;
-        anim.SetBool("IsMoving", IsMoving);
-    }
+    // Update is called once per frame
+
+    
+    
 
     private Vector2 mostream;
     void Update()
@@ -57,13 +53,51 @@ public class movement : MonoBehaviour
         mostream.x = Input.GetAxisRaw("Horizontal") * speed;
         rb.velocity = new Vector2(mostream.x, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButton("Jump"))
         {
             if (checkground()) { rb.AddForce(Vector2.up * n); }
         }
 
-        Animate();
+
+        /*if (Input.GetMouseButtonDown(0)) // при нажатии левой кнопки мыши
+
+        if (Input.GetMouseButtonDown(0))
+ 827cbe9c68ef5bfc1367b3661448beadcdfaac82
+        {
+
+            Vector2 mp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            Debug.Log(mp);
+
+            if (pc.ClicktedHZ(mp))
+            {
+                Instantiate(pc.screen);
+            }
+        }*/
+
+        // if (Input.GetMouseButtonDown(0)) // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+        // {
+        //     Vector2 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+
+        //     Debug.Log(mousePos);
+        /*3758d021cc1ada4108d23d5c3fb2ad9811ebbbe2*/
+        //     //Vector2 mp = cam.ScreenToWorldPoint(Input.mousePosition);
+
+
+        //     //if (pc.ClicktedHZ(mp))
+        //     //{
+
+        //     //}
+        //     // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+
+        // }
+
+
+
+        //ne pishi kommentarii kirillitsey, git stiraet ikh kogda pushaet
+
+
+ 
     }
 }
-
 
