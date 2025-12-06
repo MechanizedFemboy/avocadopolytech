@@ -100,14 +100,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e713fca33fb032d4aa20d11001208d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 2
   n: 400
   groundmask:
     serializedVersion: 2
     m_Bits: 64
   isgrounded: 0
-  BoxSize: {x: 0.98, y: 0.14}
-  dist: 1.28
+  BoxSize: {x: 1.85, y: 0.16}
+  dist: 2.23
 --- !u!70 &8244418315210397801
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
