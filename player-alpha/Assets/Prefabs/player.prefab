@@ -31,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.202, y: 0.58, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -100,14 +100,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e713fca33fb032d4aa20d11001208d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
-  n: 400
+  speed: 3
+  n: 500
   groundmask:
     serializedVersion: 2
     m_Bits: 64
   isgrounded: 0
-  BoxSize: {x: 0.98, y: 0.14}
-  dist: 1.28
+  BoxSize: {x: 1.71, y: 0.32}
+  dist: 2.23
 --- !u!70 &8244418315210397801
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -140,8 +140,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02, y: 0}
-  m_Size: {x: 0.3953398, y: 1.28}
+  m_Offset: {x: -0.02, y: -0.013674328}
+  m_Size: {x: 0.39533985, y: 1.2526516}
   m_Direction: 0
 --- !u!50 &6425051784094677348
 Rigidbody2D:
