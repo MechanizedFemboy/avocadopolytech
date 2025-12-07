@@ -9,7 +9,10 @@ public class Stats // поля сохранения статистики
 {
     public int FixedUnits;
     public int GamesPlayed;
+<<<<<<< HEAD
     public List<string> brokenlist;
+=======
+>>>>>>> sybau
     public bool Sound;
     public int Lang;
 
@@ -40,10 +43,14 @@ public static class SaveSystem
 {
     public static Stats stats = new Stats();
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static Situation sit = new Situation();
 =======
     public static Nastroyki nastroyki = new Nastroyki();
 >>>>>>> 8e7738aeb7241ae3b999002b00eb1be97aad0e3a
+=======
+    public static Situation sit = new Situation();
+>>>>>>> sybau
     public static string StatsName()
     {
         string path = Path.Combine(Application.persistentDataPath, "stats.json");
@@ -62,7 +69,10 @@ public static class SaveSystem
     {
         if (File.Exists(StatsName()))
         {
-            stats = JsonUtility.FromJson<Stats>(StatsName());
+            string json = File.ReadAllText(StatsName());
+            stats = JsonUtility.FromJson<Stats>(json);
+            Debug.Log(JsonUtility.FromJson<Stats>(json));
+            
         }
         else
         {
@@ -85,9 +95,15 @@ public static class SaveSystem
     {
         if (File.Exists(Savename()))
         {
+<<<<<<< HEAD
             string json = File.ReadAllText(Savename());
             sit = JsonUtility.FromJson<Situation>(json);
             Debug.Log(JsonUtility.FromJson<Situation>(json));
+=======
+         string json = File.ReadAllText(Savename());
+         sit = JsonUtility.FromJson<Situation>(json);
+         Debug.Log(JsonUtility.FromJson<Situation>(json));
+>>>>>>> sybau
         }
     }
 }

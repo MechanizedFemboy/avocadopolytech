@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 
-public class movement : MonoBehaviour
+public class movement1 : MonoBehaviour
 {
     
     public float speed = 25f;
@@ -22,15 +22,16 @@ public class movement : MonoBehaviour
     public float timeLeft;
     public bool isRunning ;
     public GameObject Sh;
-    public SpriteRenderer Shadow;
+
 
     void Start()
     {
-        Shadow = Sh.GetComponent<SpriteRenderer>();
-        Shadow.enabled = Tma;
+        //Sh = GetComponent<GameObject>();
+        Sh = GetComponentInChildren<GameObject>();
+   
         isRunning = true;
         cam = Camera.main;
-        Sh = Sh.GetComponent<GameObject>();
+        
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprt = GetComponent<SpriteRenderer>();
@@ -55,79 +56,48 @@ public class movement : MonoBehaviour
         Gizmos.DrawWireCube(transform.position - transform.up * dist, BoxSize);
     }
 
-<<<<<<< HEAD
     // Start is called before the first frame update
-    
-
-    void Awake()
-    {
-        SaveSystem.LoadSituation();
-        if (SaveSystem.sit.cords != null)
-        {
-            transform.position = SaveSystem.sit.cords;
-        }
-    }
-    void OnDestroy()
-    {
-        SaveSystem.sit.cords = transform.position;
-        SaveSystem.SaveSituation();
-=======
-    void Start()
-    {
-        cam = Camera.main;
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        sprt = GetComponent<SpriteRenderer>();
-        //когда-нибудь он будет спавниться рядом с дверьми, а не в центре комнаты, но мне ещё столько функций к сдаче проекта допиливать...
->>>>>>> sybau
-    }
 
     void Animate()
     {
         bool IsMoving = Input.GetAxisRaw("Horizontal") != 0;
         sprt.flipX = Input.GetAxisRaw("Horizontal") < 0;
+      
         anim.SetBool("IsMoving", IsMoving);
     }
 
     private Vector2 mostream;
     void Update()
     {
-        
-        
+        /*
         if (isRunning && timeLeft > 0)
         {
             timeLeft -= Time.deltaTime;
-
         }
         else if (timeLeft <= 0)
         {
-            Debug.Log("����� �����!");
+            Debug.Log("Время вышло!");
             Tma = true;
             isRunning = false;
         }
+        if (Tma)
+        {
+            Sh.transform.localScale = new Vector2(1,1);
+        }
+        else
+        {
+            Sh.transform.localScale = Vector2.zero;
+        }
+        */
         mostream.x = Input.GetAxisRaw("Horizontal") * speed;
         rb.velocity = new Vector2(mostream.x, rb.velocity.y);
-        /*
-            if (Tma)
-            {
-                Shadow.enabled = Tma;
-                Sh.transform.LocalScale.x = 1;
-                Sh.transform.lossyScale = 1;
-                if (mostream.x > 0) { }
-             
-                 
-            
-            }
-            else
-            {
-                Shadow.enabled = false;
-            }
-        }
+
         if (Input.GetButtonDown("Jump"))
         {
             if (checkground()) { rb.AddForce(Vector2.up * n); }
         }
 
-        Animate();*/
+        Animate();
     }
+   
 }
