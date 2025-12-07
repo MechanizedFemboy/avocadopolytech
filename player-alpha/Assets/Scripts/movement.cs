@@ -45,17 +45,6 @@ public class movement : MonoBehaviour
         
     }
 
-    void Awake()
-    {
-        SaveSystem.LoadSituation();
-        transform.position = SaveSystem.sit.cords;
-    }
-    void OnDestroy()
-    {
-        SaveSystem.sit.cords = transform.position;
-        SaveSystem.SaveSituation();
-    }
-
     void Animate()
     {
         bool IsMoving = Input.GetAxisRaw("Horizontal") != 0;

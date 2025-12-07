@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using System;
 
+[System.Serializable]
 public class Stats // поля сохранения статистики
 {
     public int FixedUnits;
@@ -13,6 +14,7 @@ public class Stats // поля сохранения статистики
     public int Lang;
 
 }
+[System.Serializable]
 public class Situation // поля сохранения ситуации (проверяются на каждом входе в сцену, станок, щиток и т.д.)
 {
     public List<string> broken;
@@ -33,13 +35,14 @@ public class Situation // поля сохранения ситуации (про
     назначенной им статы
     -всё это дело абильно комментировать
 */
+[System.Serializable]
 public static class SaveSystem
 {
     public static Stats stats = new Stats();
     public static Situation sit = new Situation();
     public static string StatsName()
     {
-        string path = Application.persistentDataPath + "/stats" + ".stat";
+        string path = Path.Combine(Application.persistentDataPath, "stats.json");
         return path;
     }
 
@@ -66,15 +69,21 @@ public static class SaveSystem
 
     public static string Savename()
     {
-        string path = Application.persistentDataPath + "/save" + ".stat";
+        string path = Path.Combine(Application.persistentDataPath, "save.json");
         return path;
     }
     public static void SaveSituation()
     {
-        File.WriteAllText(Savename(), JsonUtility.ToJson(sit));
+        string json = JsonUtility.ToJson(sit, true);
+        File.WriteAllText(Savename(), JsonUtility.ToJson(sit, true));
     }
     public static void LoadSituation()
     {
-        sit = JsonUtility.FromJson<Situation>(Savename());
+        if (File.Exists(Savename()))
+        {
+         string json = File.ReadAllText(Savename());
+         sit = JsonUtility.FromJson<Situation>(json);
+         Debug.Log(JsonUtility.FromJson<Situation>(json));
+        }
     }
 }
