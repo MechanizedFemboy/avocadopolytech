@@ -9,14 +9,14 @@ public class Stats // поля сохранения статистики
     public int FixedUnits;
     public int GamesPlayed;
     public List<string> brokenlist;
+    public bool Sound;
+    public int Lang;
 
 }
 public class Situation // поля сохранения ситуации (проверяются на каждом входе в сцену, станок, щиток и т.д.)
 {
     public List<string> broken;
-    public List<Vector2> cords; //координаты. индекс - номер сцены
-    public List<Vector2> cordsbasic; // базовые значения координат для загрузки после смерти
-    
+    public Vector2 cords;
 }
 
 
@@ -33,13 +33,10 @@ public class Situation // поля сохранения ситуации (про
     назначенной им статы
     -всё это дело абильно комментировать
 */
-
-
-
 public static class SaveSystem
 {
     public static Stats stats = new Stats();
-    public static Nastroyki nastroyki = new Nastroyki();
+    public static Situation sit = new Situation();
     public static string StatsName()
     {
         string path = Application.persistentDataPath + "/stats" + ".stat";
@@ -72,7 +69,12 @@ public static class SaveSystem
         string path = Application.persistentDataPath + "/save" + ".stat";
         return path;
     }
-    public static void SaveSituation(){
-        
+    public static void SaveSituation()
+    {
+        File.WriteAllText(Savename(), JsonUtility.ToJson(sit));
+    }
+    public static void LoadSituation()
+    {
+        sit = JsonUtility.FromJson<Situation>(Savename());
     }
 }
