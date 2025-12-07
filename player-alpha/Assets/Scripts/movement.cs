@@ -42,6 +42,7 @@ public class movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprt = GetComponent<SpriteRenderer>();
+        
     }
 
     void Animate()
