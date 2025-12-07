@@ -4,19 +4,21 @@ using UnityEngine;
 using System.IO;
 using System;
 
+[System.Serializable]
 public class Stats // поля сохранения статистики
 {
     public int FixedUnits;
     public int GamesPlayed;
     public List<string> brokenlist;
+    public bool Sound;
+    public int Lang;
 
 }
+[System.Serializable]
 public class Situation // поля сохранения ситуации (проверяются на каждом входе в сцену, станок, щиток и т.д.)
 {
     public List<string> broken;
-    public List<Vector2> cords; //координаты. индекс - номер сцены
-    public List<Vector2> cordsbasic; // базовые значения координат для загрузки после смерти
-    
+    public Vector2 cords;
 }
 
 
@@ -33,20 +35,14 @@ public class Situation // поля сохранения ситуации (про
     назначенной им статы
     -всё это дело абильно комментировать
 */
-
-
-
+[System.Serializable]
 public static class SaveSystem
 {
     public static Stats stats = new Stats();
-<<<<<<< HEAD
-    public static Nastroyki nastroyki = new Nastroyki();
-    public static string SaveName()
-=======
+    public static Situation sit = new Situation();
     public static string StatsName()
->>>>>>> 3f41ab6eec927e5af58e655e7a7f79c89f3d1c8d
     {
-        string path = Application.persistentDataPath + "/stats" + ".stat";
+        string path = Path.Combine(Application.persistentDataPath, "stats.json");
         return path;
     }
 
@@ -73,10 +69,21 @@ public static class SaveSystem
 
     public static string Savename()
     {
-        string path = Application.persistentDataPath + "/save" + ".stat";
+        string path = Path.Combine(Application.persistentDataPath, "save.json");
         return path;
     }
-    public static void SaveSituation(){
-        
+    public static void SaveSituation()
+    {
+        string json = JsonUtility.ToJson(sit, true);
+        File.WriteAllText(Savename(), JsonUtility.ToJson(sit, true));
+    }
+    public static void LoadSituation()
+    {
+        if (File.Exists(Savename()))
+        {
+            string json = File.ReadAllText(Savename());
+            sit = JsonUtility.FromJson<Situation>(json);
+            Debug.Log(JsonUtility.FromJson<Situation>(json));
+        }
     }
 }
