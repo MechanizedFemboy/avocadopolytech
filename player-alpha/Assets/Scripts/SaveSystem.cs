@@ -25,7 +25,7 @@ public class SavedData
 */
 public static class SaveSystem
 {
-    public static SavedData stats;
+    public static SavedData stats = new SavedData();
     public static string SaveName()
     {
         string path = Application.persistentDataPath + "/save" + ".stat";
