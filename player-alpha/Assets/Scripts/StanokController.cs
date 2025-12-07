@@ -16,7 +16,7 @@ public class StanokController : MonoBehaviour
     private TerminalManager terminalManager;
     public GameObject[] Panels;
     public int view = 0;
-    Camera cam = Camera.main;
+    Camera cam;
     // Update is called once per frame
     void Start()
     {
@@ -27,6 +27,7 @@ public class StanokController : MonoBehaviour
         Gonimaya.stanokController = this;
         Gonatel.stanokController = this;
         Gonatel.power = power;
+        cam = Camera.main;
 
         Camera.main.transform.position = new Vector3(Panels[view].transform.position.x, Panels[view].transform.position.y,-10);
     }
@@ -59,7 +60,7 @@ public class StanokController : MonoBehaviour
     }
     public void Well()
     {
-        // СТАНОК ПОЧИНИЛИ
-        terminalManager.AddInterpreterLines( new List<string> { "работает исправно" });
+        // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        terminalManager.AddInterpreterLines( new List<string> { "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" });
     }
 }
