@@ -39,7 +39,11 @@ public class Situation // поля сохранения ситуации (про
 public static class SaveSystem
 {
     public static Stats stats = new Stats();
+<<<<<<< HEAD
     public static Situation sit = new Situation();
+=======
+    public static Nastroyki nastroyki = new Nastroyki();
+>>>>>>> 8e7738aeb7241ae3b999002b00eb1be97aad0e3a
     public static string StatsName()
     {
         string path = Path.Combine(Application.persistentDataPath, "stats.json");
