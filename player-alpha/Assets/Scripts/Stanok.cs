@@ -6,16 +6,12 @@ using UnityEngine.SceneManagement;
 public class Stanok : MonoBehaviour
 {
     public string sceneName;
-    // Start is called before the first frame update
     private void OnMouseDown()
     {
-
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("StartingRoom");
+            SceneManager.LoadScene(sceneName);
         }
     }
-
-            // Update is called once per frame
 
 }

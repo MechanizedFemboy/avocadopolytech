@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: 6ec65902f784fc14f8e48454b4a61462
+  - enabled: 1
+    path: Assets/Scenes/StanokWindow.unity
+    guid: 47e301c1f60edfc48a2a10a2c31eb3f4
   m_configObjects: {}

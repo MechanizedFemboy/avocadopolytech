@@ -9,7 +9,6 @@ public class Stats // поля сохранения статистики
 {
     public int FixedUnits;
     public int GamesPlayed;
-    public List<string> brokenlist;
     public bool Sound;
     public int Lang;
 
@@ -58,7 +57,10 @@ public static class SaveSystem
     {
         if (File.Exists(StatsName()))
         {
-            stats = JsonUtility.FromJson<Stats>(StatsName());
+            string json = File.ReadAllText(StatsName());
+            stats = JsonUtility.FromJson<Stats>(json);
+            Debug.Log(JsonUtility.FromJson<Stats>(json));
+            
         }
         else
         {

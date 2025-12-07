@@ -6,6 +6,7 @@ public class SystemReloadTrigger : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        //SaveSystem.LoadDefault()  resset all the past situations to default
+        SaveSystem.sit.broken.Clear();
+        //на этом триггере все поля ситуации будут сброшены к нулю
     }
 }
