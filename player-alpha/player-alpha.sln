@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualScripting.Flow"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{33284EF8-CA2A-D9F1-9947-8792284FE38C}"
 EndProject
+<<<<<<< HEAD
+=======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.UI", "UnityEditor.UI.csproj", "{2D08E402-55C5-B4DC-7949-81C536FFC127}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Psdimporter.Editor", "Unity.2D.Psdimporter.Editor.csproj", "{4D4FCC0D-2D2A-BB12-5277-54BB37C45DE8}"
@@ -111,6 +113,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Collections.DocCodeSa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PlasticSCM.Editor.Entities", "Unity.PlasticSCM.Editor.Entities.csproj", "{9017867E-3907-6DAD-570E-38EA7240E34F}"
 EndProject
+>>>>>>> 3f41ab6eec927e5af58e655e7a7f79c89f3d1c8d
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +156,8 @@ Global
 		{33284EF8-CA2A-D9F1-9947-8792284FE38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33284EF8-CA2A-D9F1-9947-8792284FE38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33284EF8-CA2A-D9F1-9947-8792284FE38C}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
 		{2D08E402-55C5-B4DC-7949-81C536FFC127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D08E402-55C5-B4DC-7949-81C536FFC127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D08E402-55C5-B4DC-7949-81C536FFC127}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -337,6 +342,7 @@ Global
 		{9017867E-3907-6DAD-570E-38EA7240E34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9017867E-3907-6DAD-570E-38EA7240E34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9017867E-3907-6DAD-570E-38EA7240E34F}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 3f41ab6eec927e5af58e655e7a7f79c89f3d1c8d
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

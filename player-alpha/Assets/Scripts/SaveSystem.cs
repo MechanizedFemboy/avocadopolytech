@@ -33,10 +33,18 @@ public class Situation // поля сохранения ситуации (про
     назначенной им статы
     -всё это дело абильно комментировать
 */
+
+
+
 public static class SaveSystem
 {
     public static Stats stats = new Stats();
+<<<<<<< HEAD
+    public static Nastroyki nastroyki = new Nastroyki();
+    public static string SaveName()
+=======
     public static string StatsName()
+>>>>>>> 3f41ab6eec927e5af58e655e7a7f79c89f3d1c8d
     {
         string path = Application.persistentDataPath + "/stats" + ".stat";
         return path;
