@@ -79,8 +79,8 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\Merge\Developer\DirectoryConflicts\MoveDeleteMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Tool\PlasticExeLauncher.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\CloudDrive\Workspaces\DirectoryContent\ItemsGridSelection.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\Merge\Developer\DirectoryConflicts\DrawDirectoryResolutionPanel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\Diff\GetClientDiffInfos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\Merge\Developer\DirectoryConflicts\DrawDirectoryResolutionPanel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\Diff\DiffTreeView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\Locks\LocksViewMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\UI\UnityThreadWaiter.cs" />
@@ -450,9 +450,9 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\WebApi\CredentialsResponse.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\UI\UnityStyles.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\IncomingChanges.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Gluon\ShelvedChangesNotification.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\AssetMenu\AssetUVCSOperations.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Tool\ToolConstants.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Gluon\ShelvedChangesNotification.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\PendingChanges\FilesFilterPatternsMenuBuilder.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\Merge\Developer\DirectoryConflicts\LoadedTwiceMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.10.2\Editor\Views\Diff\DiffTreeViewMenu.cs" />

@@ -2,11 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System;
 
-public class SavedData
+public class Stats // поля сохранения статистики
 {
     public int FixedUnits;
     public int GamesPlayed;
+    public List<string> brokenlist;
+
+}
+public class Situation // поля сохранения ситуации (проверяются на каждом входе в сцену, станок, щиток и т.д.)
+{
+    public List<string> broken;
+    public List<Vector2> cords; //координаты. индекс - номер сцены
+    public List<Vector2> cordsbasic; // базовые значения координат для загрузки после смерти
+    
 }
 
 
@@ -25,14 +35,14 @@ public class SavedData
 */
 public static class SaveSystem
 {
-    public static SavedData stats = new SavedData();
+    public static Stats stats = new Stats();
     public static string SaveName()
     {
         string path = Application.persistentDataPath + "/save" + ".stat";
         return path;
     }
 
-    public static void Save()
+    public static void SaveStats()
     {
         if (File.Exists(SaveName()))
         {
@@ -40,11 +50,11 @@ public static class SaveSystem
         }
         File.WriteAllText(SaveName(), JsonUtility.ToJson(stats));
     }
-    public static void Load()
+    public static void LoadStats()
     {
         if (File.Exists(SaveName()))
         {
-            stats = JsonUtility.FromJson<SavedData>(SaveName());
+            stats = JsonUtility.FromJson<Stats>(SaveName());
         }
         else
         {
