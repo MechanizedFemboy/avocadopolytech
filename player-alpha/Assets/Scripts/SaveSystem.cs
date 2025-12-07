@@ -36,30 +36,39 @@ public class Situation // поля сохранения ситуации (про
 public static class SaveSystem
 {
     public static Stats stats = new Stats();
-    public static string SaveName()
+    public static string StatsName()
     {
-        string path = Application.persistentDataPath + "/save" + ".stat";
+        string path = Application.persistentDataPath + "/stats" + ".stat";
         return path;
     }
 
     public static void SaveStats()
     {
-        if (File.Exists(SaveName()))
+        if (File.Exists(StatsName()))
         {
-            File.Delete(SaveName());
+            File.Delete(StatsName());
         }
-        File.WriteAllText(SaveName(), JsonUtility.ToJson(stats));
+        File.WriteAllText(StatsName(), JsonUtility.ToJson(stats));
     }
     public static void LoadStats()
     {
-        if (File.Exists(SaveName()))
+        if (File.Exists(StatsName()))
         {
-            stats = JsonUtility.FromJson<Stats>(SaveName());
+            stats = JsonUtility.FromJson<Stats>(StatsName());
         }
         else
         {
             stats.FixedUnits = 0;
             stats.GamesPlayed = 0;
         }
+    }
+
+    public static string Savename()
+    {
+        string path = Application.persistentDataPath + "/save" + ".stat";
+        return path;
+    }
+    public static void SaveSituation(){
+        
     }
 }
