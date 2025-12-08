@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
@@ -63,6 +64,15 @@ public class movement : MonoBehaviour
         }
 
         Animate();
+    }
+
+    Scene sc;
+    void OnDestroy()
+    {
+        sc = SceneManager.GetActiveScene();
+        SaveSystem.LoadSituation();
+        SaveSystem.sit.LastScene = sc.name;
+        SaveSystem.SaveSituation();
     }
 }
 

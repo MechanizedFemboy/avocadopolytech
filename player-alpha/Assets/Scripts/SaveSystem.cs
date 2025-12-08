@@ -18,6 +18,7 @@ public class Situation // поля сохранения ситуации (про
 {
     public List<string> broken;
     public Vector2 cords;
+    public string LastScene;
 }
 
 
