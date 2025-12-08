@@ -24,7 +24,7 @@ public class Meny : MonoBehaviour
     }
     public void SettingsButton()
     {
-        SceneManager.LoadScene("Settings");
+        SettingsScreen.SetActive(true);
     }
     public void ExitButton()
     {

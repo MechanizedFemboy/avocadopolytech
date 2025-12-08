@@ -1380,18 +1380,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6154250732216496144, guid: 974a517f47f20a945828a6e35080f9c3, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6154250732216496144, guid: 974a517f47f20a945828a6e35080f9c3, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6154250732216496144, guid: 974a517f47f20a945828a6e35080f9c3, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6966395117514191509, guid: 974a517f47f20a945828a6e35080f9c3, type: 3}
       propertyPath: n
       value: 500
@@ -1399,10 +1387,6 @@ PrefabInstance:
     - target: {fileID: 6966395117514191509, guid: 974a517f47f20a945828a6e35080f9c3, type: 3}
       propertyPath: speed
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7183910556660467595, guid: 974a517f47f20a945828a6e35080f9c3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14008,6 +13992,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1607799560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4973490549475764881, guid: 974a517f47f20a945828a6e35080f9c3, type: 3}
+  m_PrefabInstance: {fileID: 458279279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2058945314
 GameObject:
   m_ObjectHideFlags: 0
@@ -14094,8 +14083,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!114 &2058945317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14235,7 +14222,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ac18b2ca1c301e4487dbe0033c2e268, type: 3}
->>>>>>> sybau
 --- !u!1001 &5772443464593716527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14307,3 +14293,4 @@ SceneRoots:
   - {fileID: 1134115902}
   - {fileID: 503835782}
   - {fileID: 2058945316}
+  - {fileID: 3599849708812824370}
